@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<!--headには設定値を入れておく-->
+<head>
+    <!--文字コードの指定-->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+
+    <!--titleに記載するとタブに名称が表示される-->
+    <title>入会申し込み</title>
+
+    <!--外部参照(linkを指定する)-->
+    <link rel="stylesheet" href="style.css">
+
+    <!--linkのあとに記載することで上書きでstylesheetの設定を指定できる
+    <style>
+        h1 {
+            font-size: 100px;
+        }
+    </style>
+    -->
+</head>
+
+<!--以下にHTMLの本文を記載する-->
+<body>
+    <!--step01-->
+    <!-- style属性を使ってフォントサイズ等を変更することができる-->
+    <!--marginは上下左右に対して空白を設ける属性-->
+    <h1>入会申し込み</h1>
+
+    <!--step02-->
+    <p>入会するには月のフォームに必要事項をご記入ください。</p>
+    <p>メールアドレス： <input type="email" name="myname"></p>
+    <p>パスワード： <input type="password" name="password"></p>
+
+    <!--step03-->
+    <button type="submit">送信</button>
+
+    <!--下の歯古い書き方
+    <input type="submit" value="送信">
+    -->
+
+</body>
+</html>
