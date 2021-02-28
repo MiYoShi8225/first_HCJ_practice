@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三善家 葬儀ページ</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css"
+        integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css"
+        integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"
+        integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="row">
+                <div class="col-sm-6">
+                    <h1>三善家 葬儀ページ</h1>
+                </div>
+            </div>
+        </header>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <form action="http://book.h2o-space.com/html/form.php" method="POST" class="row">
+            <div clsaa="col-sm-8 col-sm-offset-2">
+                <p>テスト </p>
+                <div class="form-group">
+                    <label for="name">お名前 <span class="badge badge-danger">必須</span></label>
+                    <input type="text" id="name" name="name" class="form-control" placeholder="例)山田太郎">
+                </div>
+                <div class="form-group">
+                    <label for="job">故人との関係 <span class="badge badge-danger">必須</span></label>
+                    <select id="job" name="job" class="form-control">
+                        <!--valueの中に書かれている情報がpostされる-->
+                        <option value="">選択してください</option>
+                        <option value="1">小学校・中学校</option>
+                        <option value="2">高校</option>
+                        <option value="3">大学</option>
+                        <option value="9">その他</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label>参列予定の時間<spna class="badge badge-success">任意</spna></label>
+                    <div class="checkbox">
+                        <!--labelで囲むことで、for=XXXとid=XXXと紐付けなくてもよい！-->
+                        <label>
+                            <input type="checkbox" name="ql" value="1">
+                            ①お焼香のみ：16:00-17:30 (基本的にこの時間での、参加をお願いいたします。)
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <!--labelで囲むことで、for=XXXとid=XXXと紐付けなくてもよい！-->
+                        <label>
+                            <input type="checkbox" name="ql" value="2">
+                            ②読経　　　：18:00-19:00　(こちらでも、ご焼香は可能ですが、読経含む式を執り行っている時間になります。)
+                        </label>
+                    </div>
+                    <div class="checkbox">
+                        <!--labelで囲むことで、for=XXXとid=XXXと紐付けなくてもよい！-->
+                        <label>
+                            <input type="checkbox" name="ql" value="javascript">
+                            ③お焼香のみ：19:00-20:00　(こちらは)
+                        </label>
+                    </div>
+                </div>
+                <p>
+                    ご連絡を取りたい方は<a href="tel:080-3303-1458">080-3303-1458</a>までにご連絡ください。
+                </p>
+                <button type="submit" class="btn btn-defalt">送信する</button>
+            </div>
+        </form>
+    </div>
+
+    <hr>
+
+    <div class="container">
+        <footer>
+            
+        </footer>
+    </div>
+</body>
+
+</html>
